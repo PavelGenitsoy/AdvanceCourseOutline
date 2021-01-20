@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 
 class Test {
@@ -16,12 +16,12 @@ public:
 
 int main(int argc, char const *argv[]) {
 
-	Test t; // объект создался в compile time (в данном случае)
+	Test t; // РѕР±СЉРµРєС‚ СЃРѕР·РґР°Р»СЃСЏ РІ compile time (РІ РґР°РЅРЅРѕРј СЃР»СѓС‡Р°Рµ)
 
 	constexpr int data = t.getCompileTimeValue();
-	// constexpr int data_ = t.getRuntimeValue();  // ошибка компиляции, ибо data_ должна быть инициализирована как константное выражение 
+	// constexpr int data_ = t.getRuntimeValue();  // РѕС€РёР±РєР° РєРѕРјРїРёР»СЏС†РёРё, РёР±Рѕ data_ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅР° РєР°Рє РєРѕРЅСЃС‚Р°РЅС‚РЅРѕРµ РІС‹СЂР°Р¶РµРЅРёРµ 
 	
-	// t.getRuntimeValue();  // при таком виде вызова ф-ции, объект t мог быть создан и в runtime 
+	// t.getRuntimeValue();  // РїСЂРё С‚Р°РєРѕРј РІРёРґРµ РІС‹Р·РѕРІР° С„-С†РёРё, РѕР±СЉРµРєС‚ t РјРѕРі Р±С‹С‚СЊ СЃРѕР·РґР°РЅ Рё РІ runtime 
 
 	auto test = t.getRuntimeValue();
 

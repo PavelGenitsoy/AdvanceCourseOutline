@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <vector>
 
 
@@ -11,13 +11,13 @@ private:
 };
 
 // deduction guide
-// Test::Test(const char*) -> Test::Test(const std::string&); // работает начиная с С++17 , но почему-то у меня не поддерживается
+// Test::Test(const char*) -> Test::Test(const std::string&); // СЂР°Р±РѕС‚Р°РµС‚ РЅР°С‡РёРЅР°СЏ СЃ РЎ++17 , РЅРѕ РїРѕС‡РµРјСѓ-С‚Рѕ Сѓ РјРµРЅСЏ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ
 
 
 int main(int argc, const char *argv[]) {
 	
 	Test t{ "const char" };
-	std::vector v{1,2,3};  // в С++17 можно явно не указывать <int>
+	std::vector v{1,2,3};  // РІ РЎ++17 РјРѕР¶РЅРѕ СЏРІРЅРѕ РЅРµ СѓРєР°Р·С‹РІР°С‚СЊ <int>
 
 	return 0;
 }
