@@ -11,7 +11,8 @@ private:
 };
 
 // deduction guide
-// Test::Test(const char*) -> Test::Test(const std::string&); // работает начиная с С++17 , но почему-то у меня не поддерживается
+// Test::Test(const char*) -> Test::Test(const std::string&); // работает начиная с С++17 , но почему-то у меня не поддерживается 
+															  // (скорее просто не правильно записана сигнатура выражения)
 
 
 int main(int argc, const char *argv[]) {
