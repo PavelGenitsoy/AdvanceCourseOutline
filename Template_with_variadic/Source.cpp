@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 
 class B {
@@ -40,7 +40,7 @@ public:
 
 	template <typename ...U>
 	void emplace(U&& ...data) {
-		new(arr + 0) String{ std::forward<U>(data)... };   // конструирование объекта на месте
+		new(arr + 0) String{ std::forward<U>(data)... };   // РєРѕРЅСЃС‚СЂСѓРёСЂРѕРІР°РЅРёРµ РѕР±СЉРµРєС‚Р° РЅР° РјРµСЃС‚Рµ
 	}
 
 private:
