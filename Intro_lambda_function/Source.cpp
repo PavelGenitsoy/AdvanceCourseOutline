@@ -12,11 +12,12 @@ using Func =  bool(*)(int);  // т.е. Func собой представляет 
 
 // тут с конкретным типом
 //int* find_(int* begin, int* const end, Func func) {
-//	while (begin++ != end)
+//	while (begin != end)
 //	{
 //		if (func(*begin)) {
 //			return begin;
 //		}
+//		++begin;
 //	}
 //	return end;
 //}
@@ -25,11 +26,12 @@ using Func =  bool(*)(int);  // т.е. Func собой представляет 
 // теперь для шаблонов, тут гараздо приятнее передовать указатели на ф-ции
 template <typename T, typename T1>
 T find_(T begin, T const end, T1 func) {
-	while (begin++ != end)
+	while (begin != end)
 	{
 		if (func(*begin)) {
 			return begin;
 		} 
+		++begin;
 	}
 	return end;
 }
