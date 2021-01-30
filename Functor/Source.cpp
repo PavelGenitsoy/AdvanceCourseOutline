@@ -11,7 +11,7 @@ class Functor {
 public:
 	Functor(int data) : data{data} {}
 
-	bool operator() (int value) {
+	bool operator() (int value) {  //  перегруженный оператор вызова ф-ции
 		std::cout << "hello" << std::endl;
 		return value % data == 0;
 	} 
