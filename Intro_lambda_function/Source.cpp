@@ -12,7 +12,7 @@ using Func =  bool(*)(int);  // т.е. Func собой представляет 
 
 // тут с конкретным типом
 //int* find_(int* begin, int* const end, Func func) {
-//	while (begin != end)
+//	while (begin != end + 1)
 //	{
 //		if (func(*begin)) {
 //			return begin;
