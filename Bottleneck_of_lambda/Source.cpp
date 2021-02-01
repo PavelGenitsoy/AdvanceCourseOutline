@@ -42,9 +42,9 @@ int main(int argc, const char* argv[]) {
 	};
 
 	call_function_use_function(l_new); // так как есть std::function, то произошло выделение памяти из-за передоваемого объекта лямбда(функтора)
-									   // (изза большого объёма данных)
+									   // (изза большого объёма данных). По сути лямбда просто копируется в std::function
 
-	call_function_use_function_(l_new); // нет аллокаиции памяти
+	call_function_use_function_(l_new); // нет аллокаиции памяти. Когда шаблон, то компилятор сам просто вывел типа лямбды.
 
 
 	system("pause");
